@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row justify-content-center" >
+        <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let plan of planes">
+            <div class="card text-center mb-5">
+                <div class="card-body">
+                    <h5 class="card-title border-bottom pb-3 fs-3">{{plan.titulocard}}</h5>
+                    <h6 class="card-subtitle mb-2 fw-bold fs-3 p-3" >{{plan.precio}} <span class="text-muted">/ {{plan.mes}}</span></h6>
+                    <div class="card-text">   
+                        <p>{{plan.usuario}}</p>
+                        <p>{{plan.almacenamiento}}}</p>
+                        <p>{{plan.soporte}}}</p>
+                        <p>{{plan.acceso}}</p>
+                    </div>
+                    <a href="#" class="{{plan.color}} mt-3 mb-3">{{plan.accion}}</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
